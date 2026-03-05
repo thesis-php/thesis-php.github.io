@@ -91,3 +91,9 @@
     border-color: #355a78;
     color: #ffffff;
 }
+
+.VPFeature .icon svg {
+    width: 24px;
+    height: 24px;
+    color: var(--vp-c-brand-1);
+}
