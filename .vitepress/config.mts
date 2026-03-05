@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Thesis PHP",
   description: "Documentation",
+  base: '/',
   themeConfig: {
     siteTitle: 'Thesis PHP',
 
