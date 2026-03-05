@@ -1,4 +1,48 @@
 :root {
-    --vp-c-brand-1: #646cff;
-    --vp-c-brand-2: #747bff;
+    /* Neutral (из Royal Blue) */
+    --vp-c-gray-1: #11212c;
+    --vp-c-gray-2: #182833;
+    --vp-c-gray-3: #20303b;
+    --vp-c-gray-soft: rgba(17, 33, 44, 0.14);
+
+    /* Brand (из Midnight Blue) */
+    --vp-c-brand-1: #3359c2; /* text on soft */
+    --vp-c-brand-2: #3a63d0; /* hover */
+    --vp-c-brand-3: #416ad7; /* solid bg */
+    --vp-c-brand-soft: rgba(65, 106, 215, 0.14);
+
+}
+
+.dark {
+    /* Background (из Royal Blue) */
+    --vp-c-bg: #11212c;
+    --vp-c-bg-alt: #0d1d28;
+    --vp-c-bg-elv: #182833;
+    --vp-c-bg-soft: #20303b;
+
+    /* Text contrast */
+    --vp-c-text-1: #e8eef5;
+    --vp-c-text-2: #b8c6d4;
+    --vp-c-text-3: #8fa4b8;
+
+    /* Neutral (dark mode) */
+    --vp-c-gray-1: #c7d3df;
+    --vp-c-gray-2: #9fb0bf;
+    --vp-c-gray-3: #7f94a6;
+    --vp-c-gray-soft: rgba(199, 211, 223, 0.14);
+
+    /* Brand (dark mode) */
+    --vp-c-brand-1: #8ea8ea; /* text on soft */
+    --vp-c-brand-2: #7f9de7; /* hover */
+    --vp-c-brand-3: #6f92e5; /* solid bg */
+    --vp-c-brand-soft: rgba(65, 106, 215, 0.24);
+
+    /* Code block separation */
+    --vp-code-block-bg: #0b1b26;
+
+    /* Sidebar links */
+    --vp-sidebar-link-text-color: #a9bed4;
+    --vp-sidebar-link-text-color-hover: #d4e1ee;
+    --vp-sidebar-link-text-color-active: #8ea8ea;
+
 }
