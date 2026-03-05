@@ -1,9 +1,9 @@
 :root {
-    /* Neutral (из Royal Blue) */
-    --vp-c-gray-1: #11212c;
-    --vp-c-gray-2: #182833;
-    --vp-c-gray-3: #20303b;
-    --vp-c-gray-soft: rgba(17, 33, 44, 0.14);
+    /* Neutral (light mode) */
+    --vp-c-gray-1: #dddde3;
+    --vp-c-gray-2: #e4e4e9;
+    --vp-c-gray-3: #ebebef;
+    --vp-c-gray-soft: rgba(142, 150, 170, 0.14);
 
     /* Brand (из Midnight Blue) */
     --vp-c-brand-1: #3359c2; /* text on soft */
@@ -45,4 +45,49 @@
     --vp-sidebar-link-text-color-hover: #d4e1ee;
     --vp-sidebar-link-text-color-active: #8ea8ea;
 
+}
+
+.dark .aside .outline-title {
+    color: #d4e1ee;
+}
+
+.dark .aside .outline-link {
+    color: #b8c6d4;
+}
+
+.dark .aside .outline-link:hover,
+.dark .aside .outline-link.active {
+    color: #e8eef5;
+}
+
+/* Home hero contrast tuning for dark theme */
+.dark .VPHero .name {
+    color: #6f92e5;
+}
+
+.dark .VPHero .tagline {
+    color: #c6d4e2;
+}
+
+.dark .VPHero .VPButton.brand {
+    background-color: #416ad7;
+    border-color: #416ad7;
+    color: #ffffff;
+}
+
+.dark .VPHero .VPButton.brand:hover {
+    background-color: #3a63d0;
+    border-color: #3a63d0;
+}
+
+.dark .VPHero .VPButton.alt {
+    background-color: #1b3242;
+    border-color: #2c4a63;
+    color: #dce7f3;
+}
+
+.dark .VPHero .VPButton.alt:hover {
+    background-color: #244258;
+    border-color: #355a78;
+    color: #ffffff;
 }

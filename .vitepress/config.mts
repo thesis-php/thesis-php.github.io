@@ -15,8 +15,7 @@ export default defineConfig({
     logo: '/logo.png',
 
     nav: [
-      // { text: 'Home', link: '/' },
-      // { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Документация', link: '/transaction/' }
     ],
 
     sidebar: [
