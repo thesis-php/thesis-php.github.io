@@ -32,6 +32,8 @@ jobs:
         run: npm ci --include=optional
       - name: Workaround npm optional deps bug (rollup native)
         run: npm i -D @rollup/rollup-linux-x64-gnu --no-save
+      - name: Sync package docs
+        run: npm run docs:sync
       - name: Build with VitePress
         run: npm run docs:build
       - name: Upload artifact
