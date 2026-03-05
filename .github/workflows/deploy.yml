@@ -30,6 +30,8 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Install dependencies
         run: npm ci --include=optional
+      - name: Workaround npm optional deps bug (rollup native)
+        run: npm i -D @rollup/rollup-linux-x64-gnu --no-save
       - name: Build with VitePress
         run: npm run docs:build
       - name: Upload artifact
