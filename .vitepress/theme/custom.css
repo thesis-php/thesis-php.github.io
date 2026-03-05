@@ -11,6 +11,25 @@
     --vp-c-brand-3: #416ad7; /* solid bg */
     --vp-c-brand-soft: rgba(65, 106, 215, 0.14);
 
+    /* Thesis layout tokens */
+    --thesis-doc-pad-top: 20px;
+    --thesis-doc-pad-x: 20px;
+    --thesis-doc-pad-bottom: 56px;
+    --thesis-doc-content-pad-x: 20px;
+    --thesis-doc-content-pad-bottom: 72px;
+    --thesis-doc-aside-top-offset: 28px;
+    --thesis-doc-h1-margin-bottom: 20px;
+    --thesis-doc-h2-margin-top: 34px;
+    --thesis-doc-h2-margin-bottom: 14px;
+    --thesis-doc-h2-padding-top: 14px;
+    --thesis-doc-p-margin-y: 12px;
+    --thesis-doc-hr-margin-top: 30px;
+    --thesis-doc-hr-margin-bottom: 24px;
+    --thesis-doc-code-block-margin-y: 14px;
+    --thesis-doc-code-block-pad-y: 14px;
+    --thesis-doc-code-block-pad-x: 18px;
+    --vp-code-line-height: 1.55;
+    --thesis-inline-code-line-height: 1.35;
 }
 
 .dark {
@@ -96,4 +115,74 @@
     width: 24px;
     height: 24px;
     color: var(--vp-c-brand-1);
+}
+
+/* Compact docs spacing */
+.VPDoc {
+    padding: var(--thesis-doc-pad-top) var(--thesis-doc-pad-x) var(--thesis-doc-pad-bottom) !important;
+}
+
+@media (min-width: 768px) {
+    :root {
+        --thesis-doc-pad-top: 28px;
+        --thesis-doc-pad-x: 24px;
+        --thesis-doc-pad-bottom: 72px;
+    }
+
+    .VPDoc {
+        padding: var(--thesis-doc-pad-top) var(--thesis-doc-pad-x) var(--thesis-doc-pad-bottom) !important;
+    }
+}
+
+@media (min-width: 960px) {
+    :root {
+        --thesis-doc-pad-top: 24px;
+        --thesis-doc-pad-x: 24px;
+        --thesis-doc-pad-bottom: 0;
+    }
+
+    .VPDoc {
+        padding: var(--thesis-doc-pad-top) var(--thesis-doc-pad-x) var(--thesis-doc-pad-bottom) !important;
+    }
+
+    .VPDoc .content {
+        padding: 0 var(--thesis-doc-content-pad-x) var(--thesis-doc-content-pad-bottom) !important;
+    }
+
+    .VPDoc .aside-container {
+        padding-top: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + var(--vp-doc-top-height, 0px) + var(--thesis-doc-aside-top-offset)) !important;
+    }
+}
+
+.vp-doc h1 {
+    margin: 0 0 var(--thesis-doc-h1-margin-bottom);
+}
+
+.vp-doc h2 {
+    margin: var(--thesis-doc-h2-margin-top) 0 var(--thesis-doc-h2-margin-bottom);
+    padding-top: var(--thesis-doc-h2-padding-top);
+}
+
+.vp-doc p {
+    margin: var(--thesis-doc-p-margin-y) 0;
+}
+
+.vp-doc hr {
+    margin: var(--thesis-doc-hr-margin-top) 0 var(--thesis-doc-hr-margin-bottom);
+}
+
+.vp-doc div[class*='language-'] {
+    margin: var(--thesis-doc-code-block-margin-y) 0;
+}
+
+.vp-doc [class*='language-'] pre {
+    padding: var(--thesis-doc-code-block-pad-y) 0;
+}
+
+.vp-doc [class*='language-'] code {
+    padding: 0 var(--thesis-doc-code-block-pad-x);
+}
+
+.vp-doc :not(pre) > code {
+    line-height: var(--thesis-inline-code-line-height);
 }
