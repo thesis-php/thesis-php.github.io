@@ -2,12 +2,12 @@
 layout: home
 
 hero:
-  name: "Thesis PHP"
-  text: "Drivers and tools for asynchronous PHP"
+  name: Thesis
+  text: "Drivers and tools\nfor async PHP"
   tagline: "Native AMQP, NATS, and gRPC/Protobuf support for the AMPHP v3 ecosystem"
   image:
     src: /logo.png
-    alt: Thesis PHP
+    alt: Thesis Logo
   actions:
     - theme: brand
       text: Documentation

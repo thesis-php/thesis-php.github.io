@@ -35,7 +35,7 @@ export default defineConfig({
   title: "Thesis PHP",
   description: "Documentation",
   themeConfig: {
-    siteTitle: 'Thesis PHP',
+    siteTitle: 'Thesis',
     search: {
       provider: 'local'
     },
