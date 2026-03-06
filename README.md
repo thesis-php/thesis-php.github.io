@@ -77,3 +77,8 @@ This keeps builds clean while preserving useful links to examples/licenses in so
   - `drivers/*/`
   - `low-level/*/`
 - `.gitignore` keeps root placeholders (like `.gitignore` files inside section folders) tracked.
+
+## Deployment Updates
+
+- Documentation is rebuilt and deployed automatically once per day (GitHub Actions schedule).
+- You can also [trigger deployment manually](https://github.com/thesis-php/thesis-php.github.io/actions/workflows/deploy.yml).
