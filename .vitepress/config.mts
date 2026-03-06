@@ -34,6 +34,10 @@ if (lowLevel.length > 0) {
 export default defineConfig({
   title: "Thesis PHP",
   description: "Documentation",
+  head: [
+    ['link', { rel: 'icon', type: 'image/png', href: '/logo.png' }],
+    ['link', { rel: 'apple-touch-icon', href: '/logo.png' }]
+  ],
   themeConfig: {
     siteTitle: 'Thesis',
     search: {
