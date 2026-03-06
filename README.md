@@ -1,4 +1,4 @@
-# Thesis PHP Docs
+# [Thesis Website](https://thesis-php.github.io)
 
 Central documentation website for the `thesis-php` organization, powered by VitePress.
 
