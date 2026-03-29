@@ -17,6 +17,8 @@ export default {
     { name: 'clock', title: 'Clock' },
     { name: 'sync-once', title: 'Sync Once' },
     { name: 'time-span', title: 'Time Span' },
+    { name: 'exceptionally', title: 'Exceptionally' },
+    { name: 'hot-reload', title: 'Hot Reload' },
     { name: 'varint', title: 'Varint' }
   ]
 }
