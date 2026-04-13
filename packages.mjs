@@ -19,6 +19,7 @@ export default {
     { name: 'time-span', title: 'Time Span' },
     { name: 'exceptionally', title: 'Exceptionally' },
     { name: 'hot-reload', title: 'Hot Reload' },
-    { name: 'varint', title: 'Varint' }
+    { name: 'varint', title: 'Varint' },
+    { name: 'formatter', title: 'Formatter' },
   ]
 }
