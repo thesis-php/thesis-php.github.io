@@ -21,5 +21,6 @@ export default {
     { name: 'hot-reload', title: 'Hot Reload' },
     { name: 'varint', title: 'Varint' },
     { name: 'formatter', title: 'Formatter' },
+    { name: 'headers', title: 'Headers' },
   ]
 }
